@@ -7,7 +7,7 @@ page = requests.get(
 soup = BeautifulSoup(page.content, 'html.parser')
 
 # Create top_items as empty list
-
+all_products = []
 
 # Extract and store in top_items according to instructions on the left
 products = soup.select('div.thumbnail')
